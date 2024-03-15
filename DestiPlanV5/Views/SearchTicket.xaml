@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DestiPlanv5.Views.SearchTicket"
+             Title="Sök flygbiljetter"
+             Background="PowderBlue">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="20">
+            <Label
+             Text="Miljontals billiga flyg. En enkel sökning!"
+             Style="{StaticResource Headline}"
+             VerticalOptions="Center"
+             HorizontalOptions="Center"
+             Padding="50"/>
+
+
+            <StackLayout BackgroundColor="White" Padding="10" Spacing="10">
+                <Entry x:Name="DepartureAirport" Placeholder="Från" />
+                <Entry x:Name="ArrivalAirport" Placeholder="Till" />
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <DatePicker x:Name="Departing" Format="yyyy-MM-dd" HorizontalOptions="FillAndExpand" />
+                    <DatePicker x:Name="Returning" Format="yyyy-MM-dd" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <Entry x:Name="NoOfPeople" Placeholder="Resenärer" />
+                <Button Text="Sök" HorizontalOptions="FillAndExpand" Clicked="OnClickedGetTicketInfo" />
+
+                <Label x:Name="TicketPriceLabel" Text="Pris: " />
+            </StackLayout>
+
+         
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>

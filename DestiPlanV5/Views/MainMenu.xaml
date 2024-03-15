@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DestiPlanv5.Views.MainMenu"
+             Title="DestiPlan">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25"
+        Background="PowderBlue">
+        <Label 
+            Text="Huvudmeny"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Style="{StaticResource Headline}"/>
+        
+        <Button
+            BackgroundColor="Blue"
+            Text="Sök resor"
+            Clicked="OnClickedGoSearchTicket"
+            HorizontalOptions="Fill" />
+        <Button
+            BackgroundColor="Blue"
+            Text="Utforska land"
+            Clicked="OnClickedGoCountry"
+            HorizontalOptions="Fill" />
+        <Button
+     BackgroundColor="Blue"
+     Text="Valutaväxling"
+     Clicked="OnClickedGoConvertCurrency"
+     HorizontalOptions="Fill" />
+
+        <Button
+            BackgroundColor="Blue"
+            Text="Mina favoriter"
+            Clicked="OnClickedGoMyTrips"
+            HorizontalOptions="Fill" />
+
+        <Button
+            BackgroundColor="Blue"
+            Text="Väderkollen"
+            Clicked="OnClickedGoWeatherCheck"
+            HorizontalOptions="Fill" />
+
+    </VerticalStackLayout>
+</ContentPage>

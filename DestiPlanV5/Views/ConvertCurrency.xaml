@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DestiPlanv5.Views.ConvertCurrency"
+             Title="Valutaväxling"
+>
+
+    <VerticalStackLayout 
+    Padding="30,0" 
+    Spacing="25"
+    Background="PowderBlue">
+
+        <StackLayout Orientation="Horizontal">
+            <Entry
+            x:Name="Have"
+            Placeholder="Jag har (Valuta 3 bokstäver)"
+            BackgroundColor="White"
+            TextColor="Black"
+            FontSize="Medium"/>
+
+            <Entry
+            x:Name="Want"
+            Placeholder="Jag vill ha (Valuta 3 bokstäver)"
+            BackgroundColor="White"
+            TextColor="Black"
+            HorizontalOptions="EndAndExpand"
+            FontSize="Medium"/>
+        </StackLayout>
+
+        <Entry
+        x:Name="Amount"
+        Placeholder="Summa"
+        BackgroundColor="White"
+        TextColor="Black"
+        FontSize="Medium"/>
+
+        <Button 
+        Text="Sök"
+        HorizontalOptions="Center"
+        Clicked="OnClickedGoConvertCurrency"
+        HeightRequest="60"
+        WidthRequest="200"/>
+
+        <Label 
+        x:Name="ConvertedAmount" 
+        Text=""
+        FontSize="Large"
+        BackgroundColor="PowderBlue"
+        TextColor="Black"/>
+
+        <Label 
+        x:Name="OriginalAmount" 
+        Text="" 
+        FontSize="Large"
+        BackgroundColor="PowderBlue"
+        TextColor="Black"/>
+
+        <Image
+        Source="convert.png"
+        HeightRequest="600"
+        Aspect="AspectFit" />
+    </VerticalStackLayout>
+
+
+
+
+</ContentPage>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DestiPlanv5.Views.Country"
+             Title="Landskollen">
+
+    <VerticalStackLayout
+      Padding="30,0" 
+      Spacing="25"
+      Background="PowderBlue">
+
+        <Entry
+         x:Name="UserInput"
+         Placeholder="Ange land du vill få information om: "
+         BackgroundColor="White"
+         TextColor="Black"
+         Margin="0,25,0,0"/>
+
+
+        <Button Text="Sök"
+        HorizontalOptions="Center"
+        Clicked="OnClickedGetCountryInfo"/>
+
+        <Label 
+        x:Name="CountryName"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        FontSize="Medium"/>
+
+        <Label 
+         x:Name="Capital"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        FontSize="Medium"/>
+
+
+        <Label 
+        x:Name="Pop"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        FontSize="Medium"/>
+
+        <Label
+         x:Name="LifeExpM"
+         VerticalOptions="Center"
+         HorizontalOptions="Center"
+         FontSize="Medium"/>
+        
+        <Label
+         x:Name="LifeExpF"
+         VerticalOptions="Center"
+         HorizontalOptions="Center"
+         FontSize="Medium"/>
+        <Label
+         x:Name="Currency"
+         VerticalOptions="Center"
+         HorizontalOptions="Center"
+         FontSize="Medium"/>
+        <Label
+         x:Name="Internet"
+         VerticalOptions="Center"
+         HorizontalOptions="Center"
+         FontSize="Medium"/>
+        <Label
+         x:Name="Unemployment"
+         VerticalOptions="Center"
+         HorizontalOptions="Center"
+         FontSize="Medium"/>
+        
+
+        
+
+    
+    </VerticalStackLayout>
+
+
+
+
+</ContentPage>

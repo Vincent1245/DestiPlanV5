@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DestiPlanv5.Views.MyTripAdminPage"
+             Title="Mina bokningar - Adminsida">
+
+    <VerticalStackLayout>
+
+        <Entry
+            x:Name="DestinationNameEntry"
+            Placeholder="Stad"
+            TextColor="Black"
+            FontSize="Medium"></Entry>
+
+        <Entry
+            x:Name="TripLengthEntry"
+            Placeholder="Reslängd: (antal dagar)"
+            TextColor="Black"
+            FontSize="Medium"></Entry>
+
+        <Entry
+           x:Name="BudgetEntry"
+           Placeholder="Budget"
+           TextColor="Black"
+           FontSize="Medium"></Entry>
+
+        <Entry
+          x:Name="ImageSourceEntry"
+          Placeholder="Bild"
+          TextColor="Black"
+          FontSize="Medium"></Entry>
+       
+        <Entry 
+          x:Name="DetailsEntry"
+          Placeholder="Detaljer"
+          TextColor="Black"
+          FontSize="Medium"
+          ></Entry>
+
+        <Button
+          x:Name="SaveButton"
+          Text="Spara bokning"
+          TextColor="Black"
+          FontSize="Medium"
+          Clicked="OnClickedSaveProduct"></Button>
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

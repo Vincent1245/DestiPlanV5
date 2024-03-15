@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DestiPlanv5.Views.WeatherCheck"
+             Title="Väderkollen">
+
+    <VerticalStackLayout
+         Padding="30,0" 
+         Spacing="25"
+         Background="PowderBlue">
+        
+        <Entry
+            x:Name="MyInput"
+            Placeholder="Ange stad du vill söka väder för:"
+            FontSize="Medium"
+            BackgroundColor="White"
+            TextColor="Black"/>
+
+
+        <Button Text="Sök"
+           HorizontalOptions="Center"
+           Clicked="OnClickedGetWeatherInfo"/>
+
+        <Label 
+     x:Name="Temp"
+     VerticalOptions="Center" 
+     HorizontalOptions="Center"
+     FontSize="Medium"/>
+
+        <Label 
+     x:Name="FeelsLike"
+     VerticalOptions="Center" 
+     HorizontalOptions="Center" 
+     FontSize="Medium"/>
+
+
+     <Label 
+     x:Name="MinMaxTemp"
+     VerticalOptions="Center" 
+     HorizontalOptions="Center" 
+     FontSize="Medium"/>
+
+    <Label
+       x:Name="Hum"
+       VerticalOptions="Center"
+       HorizontalOptions="Center"
+       FontSize="Medium"/>
+
+    <Label
+      x:Name="CloudPct"
+      VerticalOptions="Center"
+      HorizontalOptions="Center"
+      FontSize="Medium"/>
+
+        <Image x:Name="WeatherImage" WidthRequest="250" HeightRequest="250">
+       
+        </Image>
+
+    </VerticalStackLayout>
+
+</ContentPage>
